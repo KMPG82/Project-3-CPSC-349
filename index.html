@@ -8,8 +8,14 @@ title: Home
 </header>
 
 <body>
-  <div>
-    
+  <section>
+    {% for item in Home.media-%}
+    {% for pic in item.src.tiny-%}
 
-  </div>
+    <img src="{{pic}}" alt="{{item.alt}}">
+
+    {% endfor -%}
+    {% endfor -%}
+    </ul>
+  </section>
 </body>
