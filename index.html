@@ -9,11 +9,11 @@ title: Home
 
 <body>
   <section>
+    <p>description of photo collection</p>
+
     {% for item in Home.media-%}
     {% for pic in item.src.tiny-%}
-
-    <img src="{{pic}}" alt="{{item.alt}}">
-
+    <a href=""><img src="{{pic}}" alt="{{item.alt}}"></a>
     {% endfor -%}
     {% endfor -%}
     </ul>
