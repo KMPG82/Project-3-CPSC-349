@@ -10,10 +10,12 @@ title: Home
 <section>
   <p>description of photo collection</p>
 
+  {% assign index = 1 %}
   {% for item in Home.media-%}
   {% for pic in item.src.tiny-%}
-  <a href=""><img src="{{pic}}" alt="{{item.alt}}"></a>
+  <a href="pics/page-{{index}}"><img src="{{pic}}" alt="{{item.alt}}"></a>
   {% endfor -%}
+  {% assign index = index | plus: 1 %}
   {% endfor -%}
   </ul>
 </section>
