@@ -4,7 +4,11 @@ title: Home
 ---
 <head>
   <title>{{ title }} - {{ site }}</title>
-  <link rel="stylesheet" href="index.css">
+  <style>
+  img{
+    margin: 5px;
+  }
+  </style>
 </head>
 
 <header>
@@ -12,7 +16,7 @@ title: Home
 </header>
 
 <section>
-  <p class="description">description of photo collection</p>
+  <header>description of photo collection</header>
   {% assign index = 1 %}
   {% for item in Home.media-%}
   {% for pic in item.src.tiny-%}
