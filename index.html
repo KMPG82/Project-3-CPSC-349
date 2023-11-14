@@ -7,15 +7,13 @@ title: Home
   <h1>{{ title }}</h1>
 </header>
 
-<body>
-  <section>
-    <p>description of photo collection</p>
+<section>
+  <p>description of photo collection</p>
 
-    {% for item in Home.media-%}
-    {% for pic in item.src.tiny-%}
-    <a href=""><img src="{{pic}}" alt="{{item.alt}}"></a>
-    {% endfor -%}
-    {% endfor -%}
-    </ul>
-  </section>
-</body>
+  {% for item in Home.media-%}
+  {% for pic in item.src.tiny-%}
+  <a href=""><img src="{{pic}}" alt="{{item.alt}}"></a>
+  {% endfor -%}
+  {% endfor -%}
+  </ul>
+</section>
