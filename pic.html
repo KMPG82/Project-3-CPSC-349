@@ -8,8 +8,11 @@ pagination:
 ---
 <section>
     {% for picture in pagination.items -%}
-    <img src="{{picture.src.large}}" alt="{{picture.src.alt}}">
-    <p>Photographer: {{picture.photographer}}</p>    
+    <img src="{{picture.src.large}}" alt="{{picture.alt}}">
+    <p>{{picture.alt}}</p>  
+    <p>Photographer: {{picture.photographer}}</p>  
+    <p>Learn more about the photographer here! <a href="{{picture.photographer_url}}">{{picture.photographer_url}}</a></p> 
+
     {% endfor -%}
 </section>
 

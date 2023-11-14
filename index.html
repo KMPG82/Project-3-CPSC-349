@@ -2,14 +2,18 @@
 layout: base
 title: Home
 ---
+<head>
+  <title>{{ title }} - {{ site }}</title>
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+  <link rel="stylesheet" href="./assets/home.css">
+</head>
 
 <header>
   <h1>{{ title }}</h1>
 </header>
 
 <section>
-  <p>description of photo collection</p>
-
+  <p class="description">description of photo collection</p>
   {% assign index = 1 %}
   {% for item in Home.media-%}
   {% for pic in item.src.tiny-%}
