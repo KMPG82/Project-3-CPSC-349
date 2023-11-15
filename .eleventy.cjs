@@ -5,13 +5,4 @@ module.exports = function (eleventyConfig) {
     notify: true,
     open: true,
   });
-  eleventyConfig.addPassthroughCopy("./");
-
-  return {
-    passthroughFileCopy: true,
-    dir: {
-      input: "src",
-      output: "_site",
-    },
-  };
 };
