@@ -2,6 +2,8 @@ nav{
     border-bottom: solid;
     background-color: brown;
     justify-content: end;
+    font-size: 20px;
+    border-width: 1px;
 }
 
 footer{
@@ -12,10 +14,6 @@ footer{
     margin-top: 10rem;
 }
 
-footer>hr{
-    background-color: black;
-}
-
 .thumbnail{
   margin: 5px;
   border: solid;
@@ -23,9 +21,16 @@ footer>hr{
 }
 
 body{
-    background-color:antiquewhite ;
+    background-color:antiquewhite;
 }
 
 .large-picture{
     border: solid;
+}
+
+.description,
+.about-us,
+.group-members{
+    text-align: center;
+    font-size: 20px;
 }
