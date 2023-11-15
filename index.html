@@ -4,23 +4,24 @@ title: Home
 ---
 <head>
   <title>{{ title }} - {{ site }}</title>
-  <style>
-  img{
-    margin: 5px;
-  }
-  </style>
 </head>
 
 <header>
   <h1>{{ title }}</h1>
+  <h3>
+    This collection is dedicated to the hardworking bartenders
+    out there! We wanted to show our appreciation to them by
+    displaying stunning photos that showcase the charm of 
+    these individuals and their work.
+  </h3>
+
 </header>
 
 <section>
-  <header>description of photo collection</header>
   {% assign index = 1 %}
   {% for item in Home.media-%}
   {% for pic in item.src.tiny-%}
-  <a href="pics/page-{{index}}"><img src="{{pic}}" alt="{{item.alt}}"></a>
+  <a href="pics/page-{{index}}" class="thumbnail"><img src="{{pic}}" alt="{{item.alt}}"></a>
   {% endfor -%}
   {% assign index = index | plus: 1 %}
   {% endfor -%}
