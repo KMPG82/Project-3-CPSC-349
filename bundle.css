@@ -16,16 +16,10 @@ footer{
 
 .thumbnail{
   margin: 5px;
-  border: solid;
-  color: black;
 }
 
 body{
     background-color:antiquewhite;
-}
-
-.large-picture{
-    border: solid;
 }
 
 .description,
