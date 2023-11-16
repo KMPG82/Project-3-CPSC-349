@@ -6,12 +6,12 @@ pagination:
     data: Home.media
     size: 1
 ---
-<section class="page">
+<section>
     {% for picture in pagination.items -%}
-    <img src="{{picture.src.large}}" alt="{{picture.alt}}" class="large-picture">
+    <img src="{{picture.src.large}}" alt="{{picture.alt}}">
     <header>
         <p><b>{{picture.alt}}</b></p>  
-        <p><b>Photographer: {{picture.photographer}}</b></p>  
+        <p><b>Photographer:</b> {{picture.photographer}}</p>  
         <p><b>Learn more about the photographer here!</b> <a href="{{picture.photographer_url}}">{{picture.photographer_url}}</a></p> 
     </header>
     {% endfor -%}
