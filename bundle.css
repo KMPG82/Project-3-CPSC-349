@@ -1,4 +1,51 @@
 nav{
     border-bottom: solid;
-    border-radius: 1px;
+    border-width: 1px;
+    justify-content: end;
+    background-color: rgb(156, 41, 41);
+}
+
+body{
+     background-color:blanchedalmond;
+}
+
+footer{
+    text-align: center;
+    max-width: 100%;
+    border-top: solid;
+    border-width: 1px;
+    margin-top: 5rem;
+    background-color: rgb(156, 41, 41);
+}
+
+.description{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.description,
+nav,
+footer,
+.pic-info,
+.about-us,
+.group-members{
+    font-size: 20px;
+}
+
+.thumbnail{
+    margin: 5px;
+}
+
+.pic-info{
+    text-align: center;
+}
+
+.about-us{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.group-members{
+    text-align: center;
 }
