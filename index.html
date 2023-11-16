@@ -18,10 +18,7 @@ title: Home
 <section>
   {% assign index = 1 %}
   {% for item in Home.media-%}
-  {% for pic in item.src.tiny-%}
-  <a href="pics/page-{{index}}"><img src="{{pic}}" alt="{{item.alt}}" class="thumbnail"></a>
-  {% endfor -%}
+  <a href="pics/page-{{index}}"><img src="{{item.src.tiny}}" alt="{{item.alt}}" class="thumbnail"></a>
   {% assign index = index | plus: 1 %}
   {% endfor -%}
-  </ul>
 </section>
