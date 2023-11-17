@@ -1,6 +1,10 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 nav{
     border-bottom: solid;
-    border-width: 1px;
+    border-width: 3px;
     justify-content: end;
     background-color: rgb(156, 41, 41);
 }
@@ -13,17 +17,18 @@ footer{
     text-align: center;
     max-width: 100%;
     border-top: solid;
-    border-width: 1px;
+    border-width: 3px;
     margin-top: 7rem;
     background-color: rgb(156, 41, 41);
     color: white;
+    border-color: black;
 }
 
 .description{
     margin: auto;
     text-align: center;
     margin-bottom: 2rem;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .description,
@@ -54,3 +59,8 @@ footer,
     text-align: center;
 }
 
+.pic-large{
+    border:ridge;
+    border-width: 20px;
+    border-color: rgb(99, 18, 18);
+}
