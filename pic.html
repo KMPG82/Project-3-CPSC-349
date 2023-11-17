@@ -8,7 +8,12 @@ pagination:
 ---
 <section>
     {% for picture in pagination.items -%}
-    <img src="{{picture.src.large}}" alt="{{picture.alt}}" class="pic-large">
+    <img 
+    src="{{picture.src.large}}" 
+    alt="{{picture.alt}}" 
+    class="pic-large"
+    style='border-color: {{picture.avg_color}};'
+    >
     
     <p class="pic-info">
         {{picture.alt}}<br><br>
